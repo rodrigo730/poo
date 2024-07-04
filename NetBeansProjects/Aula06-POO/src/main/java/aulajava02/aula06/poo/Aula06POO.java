@@ -5,8 +5,11 @@ public class Aula06POO {
     public static void main(String[] args) {
  
        ControleRemoto c = new ControleRemoto();
-         c.maisVolume();
+         c.setVolume(100);
+         c.setTocando(true);
+         c.setLigado(true);
+         c.ligarMudo();
          c.abrirMenu();
-         c.play();
+        
      }
 }
