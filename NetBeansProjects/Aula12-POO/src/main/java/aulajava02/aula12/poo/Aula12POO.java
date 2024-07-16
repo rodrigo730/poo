@@ -1,16 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package aulajava02.aula12.poo;
-
-/**
- *
- * @author rodrigo
- */
 public class Aula12POO {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Mamifero m1 = new Mamifero();
+        
+        m1.setPeso(80);
+        m1.setMembros(4);
+        m1.setcorPelo("Azul");
+        m1.setIdade(1);
+        m1.emitirSom();
     }
 }
