@@ -1,13 +1,20 @@
 package com.mycompany.aula15.poo;
 public class Gafanhoto extends Pessoa{
-    private boolean login;
+    private String login;
     private int totAssis;
 
-    public boolean isLogin() {
+    public Gafanhoto(String sexo, int idade, String nome,String l) {
+        super(sexo, idade, nome);
+        this.login = l;
+        this.totAssis = 0;
+    }
+    
+    
+    public String isLogin() {
         return login;
     }
 
-    public void setLogin(boolean l) {
+    public void setLogin(String l) {
         this.login = l;
     }
 

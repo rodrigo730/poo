@@ -1,9 +1,16 @@
 package com.mycompany.aula15.poo;
-public class Pessoa {
-    private String sexo;
-    private int idade; 
-    private String nome;
-    private int xp;
+public abstract class Pessoa {
+    protected String sexo;
+    protected int idade; 
+    protected String nome;
+    protected int xp;
+
+    public Pessoa(String sexo, int idade, String nome) {
+        this.sexo = sexo;
+        this.idade = idade;
+        this.nome = nome;
+        this.xp = 0;
+    }
     
     public String getSexo(){
         return sexo;
@@ -39,4 +46,13 @@ public class Pessoa {
     public void ganharxp(){
         
     }
+
+    @Override
+    public String toString() {
+        return "\nPessoa{" + "\nsexo=" + sexo + 
+                ",\nidade=" + idade + 
+                ",\nnome=" + nome + ", "
+                + "\nxp=" + xp + '}';
+    }
+    
 }

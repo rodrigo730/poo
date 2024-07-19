@@ -4,4 +4,6 @@ public interface AcoesVideo {
     public void pause();
     public void like();
     public void dislike();
+    public void inscrever();
+    public void desinscrever();
 }
