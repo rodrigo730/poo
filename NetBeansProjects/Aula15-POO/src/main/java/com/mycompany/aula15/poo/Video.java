@@ -72,6 +72,13 @@ public class Video implements AcoesVideo{
         this.reproduzindo = r;
     }
     
+    public void MediaAva(){
+        int media;
+        media = ((this.avaliaçao + avaliaçao)/this.views);
+        
+        this.avaliaçao = media;
+    }
+    
     @Override
     public void play() {
         this.setReproduzindo(true);

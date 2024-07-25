@@ -9,8 +9,6 @@ public class Visualizacao {
         this.filme = filme; 
         this.espectador.setTotAssis(this.espectador.getTotAssis() + 1);
         this.filme.setViews(this.filme.getViews() + 1);
-        this.filme.setCurtidas(this.filme.getCurtidas() + 1);
-        this.filme.setDislike(this.filme.getDislike() + 1);
     }
    
     
@@ -28,13 +26,23 @@ public class Visualizacao {
     }
     
     public void Avaliar(){
-        
+        this.filme.setAvaliaçao(5);
     }
-    public void Avaliar(float nota){
-        
+    public void Avaliar(int nota){
+        this.filme.setAvaliaçao(nota);
     }
-    public void Avaliar(int porc){
-        
+    public void Avaliar(float porc){
+        int tot = 0;
+        if(tot <= 20){
+            tot = 3;
+        }else if(tot > 20 || tot <=50){
+            tot = 5;
+        }else if(tot > 50 || tot <=90){
+            tot = 8;
+        }else{
+            tot = 10;
+        }
+        this.filme.setAvaliaçao(tot);
     }
 
     @Override
